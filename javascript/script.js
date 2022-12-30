@@ -1,13 +1,13 @@
-const productImg = document.querySelector('main>img')
+const productImg = document.getElementById('imagem')
 
-const media = (x) => {
-  if (x.matches) { 
-    productImg.setAttribute('src','/assets/image-product-mobile')
+function imgMobile(query)  {
+  if (query.matches) {
+    productImg.setAttribute('src','/assets/image-product-mobile.jpg')
   } else {
     productImg.setAttribute('src','/assets/image-product-desktop.jpg')
   }
 }
 
-var x = window.matchMedia('(max-width:720px)')
-media(x)
-x.addEventListener(media)
+var query = window.matchMedia('(max-width:720px)')
+imgMobile(query)
+query.addEventListener('change', imgMobile); 
