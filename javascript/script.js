@@ -2,9 +2,9 @@ const productImg = document.getElementById('imagem')
 
 function imgMobile(query)  {
   if (query.matches) {
-    productImg.setAttribute('src','https://github.com/fabioaes/product-preview-card/blob/main/assets/image-product-mobile.jpg')
+    productImg.setAttribute('src','https://raw.githubusercontent.com/fabioaes/product-preview-card/main/assets/image-product-mobile.jpg')
   } else {
-    productImg.setAttribute('src','https://github.com/fabioaes/product-preview-card/blob/main/assets/image-product-desktop.jpg')
+    productImg.setAttribute('src','https://raw.githubusercontent.com/fabioaes/product-preview-card/main/assets/image-product-desktop.jpg')
   }
 }
 
